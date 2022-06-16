@@ -9,13 +9,14 @@ import {
   Contact,
   Description,
   ContactTitle,
-  ContactLinkBox
+  ContactLinkBox,
 } from "./styles";
 import imgProfile from "./../../img/Perfil/Y-O.jpg";
 import fbLogo from "./../../img/Contact/fb-Logo.jpeg";
 import gitLogo from "./../../img/Contact/web-github-icon.png";
 import mailLogo from "./../../img/Contact/mail-logo.jpeg";
 import whatsappLogo from "./../../img/Contact/WhatsappIcon.jpg";
+import linkedinLogo from "./../../img/Contact/linkedin-icon.png";
 
 export const InfoSection = () => {
   return (
@@ -44,8 +45,9 @@ export const InfoSection = () => {
             <span>Nativo</span>
             <span>Intermedio</span>
             <Description>
-              Mi trabajo tiene enfoque en mejorar la experiencia de usuario y
-              crear buenos componentes reutilizables.
+              Me enfoco en mejorar la experiencia de usuario y crear buenos
+              componentes reutilizables. Me gustaria formar parte en la creación
+              y desarrollo de tecnologías revolucionarias.
             </Description>
           </Info>
         </InfoBox>
@@ -75,6 +77,15 @@ export const InfoSection = () => {
             >
               <span>Whatsapp</span>
               <img loading={"lazy"} alt="" src={whatsappLogo} width={50} />
+            </a>
+            <a
+              target={"blank"}
+              href={
+                "https://api.whatsapp.com/send?phone=584262381721&text=Hola"
+              }
+            >
+              <span>LinkedIn</span>
+              <img loading={"lazy"} alt="" src={linkedinLogo} width={50} />
             </a>
           </ContactLinkBox>
         </Contact>
