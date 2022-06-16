@@ -197,6 +197,7 @@ export const Name = styled.span`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   border-bottom: 2px solid #00dfd8;
+  border-top: 2px solid #313c92;
   transform: scaley(120%);
   box-shadow: 0px 0px 6px white;
   width: 100%;
