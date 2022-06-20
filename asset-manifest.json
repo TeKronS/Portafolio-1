@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portafolio-1/static/css/main.3b43d5d8.css",
-    "main.js": "/Portafolio-1/static/js/main.0b6fcee2.js",
+    "main.js": "/Portafolio-1/static/js/main.7b61f206.js",
     "static/js/787.cc4e593a.chunk.js": "/Portafolio-1/static/js/787.cc4e593a.chunk.js",
     "static/media/Inversiones Boara Wep App.jpg": "/Portafolio-1/static/media/Inversiones Boara Wep App.3f9d9e34314a1e523485.jpg",
     "static/media/Tienda Online 1.jpg": "/Portafolio-1/static/media/Tienda Online 1.be69e0f939e66d63db76.jpg",
@@ -21,11 +21,11 @@
     "static/media/732212.png": "/Portafolio-1/static/media/732212.35c514b2c64dd23d08ae.png",
     "index.html": "/Portafolio-1/index.html",
     "main.3b43d5d8.css.map": "/Portafolio-1/static/css/main.3b43d5d8.css.map",
-    "main.0b6fcee2.js.map": "/Portafolio-1/static/js/main.0b6fcee2.js.map",
+    "main.7b61f206.js.map": "/Portafolio-1/static/js/main.7b61f206.js.map",
     "787.cc4e593a.chunk.js.map": "/Portafolio-1/static/js/787.cc4e593a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3b43d5d8.css",
-    "static/js/main.0b6fcee2.js"
+    "static/js/main.7b61f206.js"
   ]
 }
