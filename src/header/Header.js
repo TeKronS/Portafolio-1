@@ -7,7 +7,7 @@ import {
   Text3,
   Virgulilla,
   BoxImgProfile,
-  BoxProfile
+  BoxProfile,
 } from "./styles";
 
 import ImgProfile from "./../img/Perfil/Y-O.jpg";
@@ -15,32 +15,33 @@ import ImgProfile from "./../img/Perfil/Y-O.jpg";
 export const HeaderSection = () => {
   return (
     <Header>
+      <Name>Simón Ramírez </Name>
+
       <BoxProfile>
-        <Name>Simón Ramírez </Name>
         <BoxImgProfile>
           <img alt="" src={ImgProfile} width={200} />
         </BoxImgProfile>
+        <Title>
+          <Text1>
+            Front-end
+            <Virgulilla>
+              <div>~~~~~~~~</div>
+            </Virgulilla>
+          </Text1>
+          <Text2>
+            Web
+            <Virgulilla>
+              <div>~~~~~~~~</div>
+            </Virgulilla>
+          </Text2>
+          <Text3>
+            Developer
+            <Virgulilla>
+              <div>~~~~~~~~</div>
+            </Virgulilla>
+          </Text3>
+        </Title>
       </BoxProfile>
-      <Title>
-        <Text1>
-          Front-end
-          <Virgulilla>
-            <div>~~~~~~~~</div>
-          </Virgulilla>
-        </Text1>
-        <Text2>
-          Web
-          <Virgulilla>
-            <div>~~~~~~~~</div>
-          </Virgulilla>
-        </Text2>
-        <Text3>
-          Developer
-          <Virgulilla>
-            <div>~~~~~~~~</div>
-          </Virgulilla>
-        </Text3>
-      </Title>
     </Header>
   );
 };
