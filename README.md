@@ -1,5 +1,13 @@
-# Simón Enrique Ramírez Ferrer
+# Portafolio-1.
 
-## Portafolio de Simon Enrique Ramirez Ferrer (TeKrons), Desarrollador web front-end.
+## es mi portafolio donde coloco toda mi información profesional referente a el sector tecnológico.
+
+## Este proyecto contiene:
+
+### -Diseño Responsivo.
+
+### -Configuración PWA (Básica).
+
+### -Animación de la portada (estilo Vercel con un añadido extra).
 
 ### Visitelo: https://tekrons.github.io/Portafolio-1/
