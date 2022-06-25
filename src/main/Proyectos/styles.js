@@ -47,91 +47,59 @@ export const Title = styled.h2`
   }
 `;
 
-export const CardProyect = styled.article`
-  position: relative;
-  border: 1px solid black;
-  border-radius: 3px;
-  width: 100%;
-  overflow: hidden;
-  transition: 500ms ease-in-out 0s;
-  box-shadow: 0px 0px 6px white;
-  cursor: pointer;
-  img {
+export const ContainDescripotion = styled.div`
+  position: fixed;
+  display: flex;
+  z-index: 7;
+  height: calc(100vh - 20px);
+  top: 0;
+  right: 0;
+  left: 0;
+  background: rgba(250, 250, 250, 0.6);
+  overflow: auto;
+  padding: 10px;
+  justify-content: center;
+  align-items: flex-start;
+  cursor: default;
+  div {
+    border-radius: 10px;
+    position: relative;
     width: 100%;
-    height: 100%;
+    max-width: 600px;
+    background-color: white;
+    color: #1d1d1d;
+    padding: 10px;
+    border: 1px solid #1d1d1d;
   }
-  :hover {
-    border-color: white;
-    a {
-      height: calc(50% - 2px);
-      :hover {
-        span {
-          background: white;
-          color: black;
-        }
-      }
+  h3 {
+    text-align: center;
+  }
+
+  button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 2px 14px 0 14px;
+    color: #ff4040;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    border-left: 1px solid #1d1d1d;
+    border-bottom: 1px solid #1d1d1d;
+    cursor: pointer;
+    background: #1d1d1d;
+    transition: 150ms ease 0s;
+    :hover {
+      color: #ff0080;
+      font-size: 25px;
+      line-height: 35px;
     }
   }
-`;
-
-export const BoxProyect = styled.a`
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  right: 0;
-  transition: 400ms ease-in-out 0s;
-  height: 0%;
-  background: rgba(29, 29, 29, 0.6);
-  border: 1px solid #7928ca;
-  overflow: hidden;
-  text-decoration: none;
-
-  span {
-    text-align: center;
-    height: 70px;
-    width: 80px;
-    background: linear-gradient(#7928ca 15%, #f0f0f0);
-    border: 2px solid #7928ca;
-    border-radius: 999px;
-    margin-bottom: -36px;
-    line-height: 40px;
-    color: black;
-    cursor: pointer;
-    font-weight: bold;
-  }
-`;
-
-export const BoxRepo = styled.a`
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  position: absolute;
-  z-index: 2;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  transition: 400ms ease-in-out 0s;
-  height: 0%;
-  background: rgba(29, 29, 29, 0.6);
-  border: 1px solid #7928ca;
-  overflow: hidden;
-  text-decoration: none;
-
-  span {
-    text-align: center;
-    height: 70px;
-    width: 80px;
-    background: linear-gradient(#f0f0f0, #7928ca 80%);
-    border: 2px solid #7928ca;
-    border-radius: 999px;
-    margin-top: -36px;
-    line-height: 95px;
-    color: white;
-    cursor: pointer;
-    font-weight: bold;
+  p {
+    padding: 0 20px;
+    text-indent: 30px;
   }
 `;
