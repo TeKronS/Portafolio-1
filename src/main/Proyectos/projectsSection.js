@@ -50,8 +50,8 @@ const Description1 = ({ closeInfo }) => {
         <button onClick={closeInfo}>X</button>
         <h3>Canvas Dibujo</h3>
         <p>
-          Este fue mi primer proyecto, es una aplicación para dibujar en pc o
-          tablet con varias funciones de dubujos muy comunes.
+          Este fue mi primer proyecto, es una Web App para dibujar en PC o
+          TABLET con varias funciones de dibujos muy comunes.
         </p>
         <h4>En este proyecto aplico:</h4>
 
@@ -125,7 +125,8 @@ const Description3 = ({ closeInfo }) => {
         <button onClick={closeInfo}>X</button>
         <h3>Tienda Online</h3>
         <p>
-          Segundo Proyecto. Aplicación Web de compra venta estilo Mercado Libre.
+          Segundo Proyecto. Aplicación Web de compra y venta estilo Mercado
+          Libre.
         </p>
 
         <h4>En este proyecto cree componentes reutilizables:</h4>
@@ -168,7 +169,7 @@ const Description4 = ({ closeInfo }) => {
           Proyecto Inversiones Boara, es una Web App para una empresa que vende
           regalos para días especiales. No contiene pasarelas de pago solo
           información de los productos e integración para solicitar productos
-          por Whatsap y Facebook.
+          por WhatsApp y Facebook.
         </p>
 
         <h4>Este proyecto contiene:</h4>
