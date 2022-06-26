@@ -184,8 +184,8 @@ const Description4 = ({ closeInfo }) => {
           <li>
             Barra de navegación segundaria con diseño que responde a elementos
             en su interior y el tamaño de pantalla (detecta si los botones en su
-            interior caben en una lineal horizontal, y no caben cambia el diseño
-            de la barra).
+            interior caben en una lineal horizontal, y si no caben cambia el
+            diseño de la barra).
           </li>
           <li>
             Los botones de la barra de navegación segundaria los coloca el
@@ -195,7 +195,7 @@ const Description4 = ({ closeInfo }) => {
           </li>
           <li>
             Toda la información de los productos es manipulada por el
-            administrador de la pagina con una segunda pagina de Formulario.
+            administrador de la pagina con una segunda pagina de formulario.
           </li>
           <li>Animación del Lógo de la Empresa.</li>
           <li>Integración de mensajes para WhatsApp.</li>
