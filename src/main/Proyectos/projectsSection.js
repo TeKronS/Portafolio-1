@@ -27,7 +27,7 @@ export const ProjectsSection = () => {
 
         <CardProject
           image={img3}
-          link={"https://tekrons.github.io/Tienda-Online/"}
+          link={"https://sesion-tienda-online.web.app/"}
           repo={"https://github.com/TeKronS/Tienda-Online"}
           Description={Description3}
         />
