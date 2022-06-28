@@ -46,13 +46,13 @@ export const InfoSection = () => {
             <span>Intermedio</span>
             <Description>
               Me enfoco en mejorar la experiencia de usuario y crear buenos
-              componentes reutilizables. Me gustaria formar parte en la creación
+              componentes reutilizables. Me gustaría formar parte en la creación
               y desarrollo de tecnologías revolucionarias.
             </Description>
           </Info>
         </InfoBox>
         <Contact>
-          <ContactTitle>Contanto</ContactTitle>
+          <ContactTitle>Contacto</ContactTitle>
           <ContactLinkBox>
             <a
               target={"blank"}
