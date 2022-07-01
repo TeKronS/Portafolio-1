@@ -79,12 +79,11 @@ export const Header = styled.header`
 export const Title = styled.h1`
   text-align: center;
   font-size: 20vw;
-  font-weight: 800;
   letter-spacing: -0.06em;
   user-select: none;
   box-sizing: border-box;
   color: white;
-  margin: 0 auto;
+  margin: 0;
   width: 100%;
   max-width: 600px;
   background-color: #1d1d1d;
@@ -106,20 +105,28 @@ export const Title = styled.h1`
     border-bottom-left-radius: 50px;
     border-top-right-radius: 60px;
     border-bottom-right-radius: 60px;
+    width: 105%;
   }
   span {
     display: block;
     position: relative;
     line-height: 1.1;
-    padding: 0 10px;
+    padding-right: 10px;
+    margin-left: -5%;
     white-space: nowrap;
+    width: 110%;
     overflow: hidden;
     :before {
+      display: block;
+      width: 100%;
       opacity: 0;
       position: absolute;
+      margin-left: -5px;
       height: 170px;
+      left: 0;
+      right: 0;
       inset: 0;
-      padding: 0 10px;
+      text-align: center;
       white-space: nowrap;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
