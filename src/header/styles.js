@@ -79,7 +79,8 @@ export const Header = styled.header`
 export const Title = styled.h1`
   text-align: center;
   font-size: 20vw;
-  letter-spacing: -0.06em;
+  font-family: "RobotoTK";
+  letter-spacing: -0.02em;
   user-select: none;
   box-sizing: border-box;
   color: white;

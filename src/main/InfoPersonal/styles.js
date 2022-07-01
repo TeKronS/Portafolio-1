@@ -136,7 +136,7 @@ export const ContactLinkBox = styled.div`
   align-content: center;
   background: #1d1d1d;
   padding: 20px;
-
+  font-family: "RobotoTK";
   a {
     color: white;
     display: grid;
@@ -144,7 +144,7 @@ export const ContactLinkBox = styled.div`
     border: 2px solid white;
     border-radius: 5px;
     margin: 10px 5px;
-    width: 74px;
+    width: 80px;
     :hover {
       color: orange;
       border-color: orange;
