@@ -22,6 +22,8 @@ export const HeaderSection = () => {
     let element;
     let selectElement;
     let isTouch = false;
+
+    //this function move triangle
     function triangleMove() {
       const width = window.innerWidth;
 
@@ -82,6 +84,7 @@ export const HeaderSection = () => {
       }
     }
 
+    //this function determines the shape of the ammunition line
     function reziseLinePower(end) {
       const width = window.innerWidth;
       const xline = end + 1;
@@ -95,8 +98,10 @@ export const HeaderSection = () => {
         width - 70
       } ${leftHeight} M 190 100 z'%0Astyle='fill:none;stroke:red;stroke-dasharray:5;stroke-linecap:round;stroke-width:3' /%3E%3C/svg%3E")`;
     }
-
+    // initial execution
     reziseLinePower(x);
+
+    // this function moves the bullet
     function disparar() {
       if (y && element) {
         if (y > 130) {
@@ -158,11 +163,13 @@ export const HeaderSection = () => {
       triangleMove();
       disparar();
     }
+
     function clickpush() {
       if (!isTouch) {
         disparar();
       }
     }
+
     function touchmove(e) {
       if (e.touches[0]) {
         x = e.touches[0].clientX;
@@ -174,6 +181,7 @@ export const HeaderSection = () => {
       }
       triangleMove();
     }
+
     function clickmove(e) {
       if (e.clientX && e.clientY) {
         x = e.clientX;

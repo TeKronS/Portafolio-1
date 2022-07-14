@@ -3,11 +3,14 @@ import { Body, ButtonBox } from "./styles";
 
 export const CardProject = ({ link, repo, image, Description }) => {
   const RefImg = useRef(null);
+
+  //this function prevent open link
   function LinkClick(e) {
     if (e.isTrusted) {
       e.preventDefault();
     }
   }
+  //this function open and close info window
   function InfoClick() {
     RefImg.current.nextSibling.classList.toggle("open");
   }
@@ -15,7 +18,6 @@ export const CardProject = ({ link, repo, image, Description }) => {
   return (
     <Body>
       <img ref={RefImg} loading={"lazy"} alt="" src={image} width={600} />
-
       <Description closeInfo={InfoClick} />
       <ButtonBox>
         <a onClick={LinkClick} target={"blank"} href={repo}>
