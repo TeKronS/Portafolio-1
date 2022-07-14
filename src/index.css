@@ -11,7 +11,9 @@ body {
   user-select: none;
   overflow-x: hidden;
 }
-
+* {
+  -webkit-user-drag: none !important;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

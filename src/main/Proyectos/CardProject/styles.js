@@ -13,6 +13,7 @@ export const Body = styled.article`
   img {
     width: 100%;
     height: calc(100% - 50px);
+    pointer-events: none;
   }
   .open {
     visibility: visible !important;
