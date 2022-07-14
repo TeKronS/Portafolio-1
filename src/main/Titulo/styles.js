@@ -1,11 +1,8 @@
 import styled from "styled-components";
 
 const DURATION = 15;
-const RESOLUTION_H = "1050px";
 const RESOLUTION_W = "755px";
 const RESOLUTION_W2 = "1100px";
-const RESOLUTION_F_H = "600px";
-const RESOLUTION_F_W = "380px";
 
 export const Body = styled.section`
   display: flex;

@@ -131,9 +131,6 @@ export const Contact = styled.section`
   background: rgba(250, 250, 250, 0.6);
   width: calc(100% - 15px);
   max-width: 500px;
-  /* @media screen and (min-width: 1000px) {
-    margin: auto;
-  } */
 `;
 
 export const ContactTitle = styled.h2`
