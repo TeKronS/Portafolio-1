@@ -1,4 +1,10 @@
-import { Body, Title, SectionCard, ContainDescripotion } from "./styles";
+import {
+  Body,
+  Title,
+  ProjectContainer,
+  SectionCard,
+  ContainDescripotion,
+} from "./styles";
 import img1 from "./../../img/Projects/Canvas Dibujo 1.jpg";
 import img2 from "./../../img/Projects/IB Admin 1.png";
 import img3 from "./../../img/Projects/Tienda Online 1.jpg";
@@ -8,37 +14,39 @@ import { CardProject } from "./CardProject/CardProject";
 export const ProjectsSection = () => {
   return (
     <Body>
-      <Title>
-        <span>Proyectos</span>
-      </Title>
-      <SectionCard>
-        <CardProject
-          image={img1}
-          link={"https://tekrons.github.io/Canva-Dibujo/"}
-          repo={"https://github.com/TeKronS/Canva-Dibujo"}
-          Description={Description1}
-        />
-        <CardProject
-          image={img2}
-          link={"https://tekrons.github.io/Inversiones-Boara-Admin-Form/"}
-          repo={"https://github.com/TeKronS/Inversiones-Boara-Admin-Form"}
-          Description={Description2}
-        />
+      <ProjectContainer>
+        <Title>
+          <span>Proyectos</span>
+        </Title>
+        <SectionCard>
+          <CardProject
+            image={img1}
+            link={"https://tekrons.github.io/Canva-Dibujo/"}
+            repo={"https://github.com/TeKronS/Canva-Dibujo"}
+            Description={Description1}
+          />
+          <CardProject
+            image={img2}
+            link={"https://tekrons.github.io/Inversiones-Boara-Admin-Form/"}
+            repo={"https://github.com/TeKronS/Inversiones-Boara-Admin-Form"}
+            Description={Description2}
+          />
 
-        <CardProject
-          image={img3}
-          link={"https://sesion-tienda-online.web.app/"}
-          repo={"https://github.com/TeKronS/Tienda-Online"}
-          Description={Description3}
-        />
+          <CardProject
+            image={img3}
+            link={"https://sesion-tienda-online.web.app/"}
+            repo={"https://github.com/TeKronS/Tienda-Online"}
+            Description={Description3}
+          />
 
-        <CardProject
-          image={img4}
-          link={"https://inversiones-boara.web.app/"}
-          repo={"https://github.com/TeKronS/Inversiones-Boara"}
-          Description={Description4}
-        />
-      </SectionCard>
+          <CardProject
+            image={img4}
+            link={"https://inversiones-boara.web.app/"}
+            repo={"https://github.com/TeKronS/Inversiones-Boara"}
+            Description={Description4}
+          />
+        </SectionCard>
+      </ProjectContainer>
     </Body>
   );
 };

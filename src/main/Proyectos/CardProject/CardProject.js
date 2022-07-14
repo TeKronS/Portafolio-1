@@ -1,27 +1,31 @@
-import { useState } from "react";
-import { Body, BoxProject, BoxRepo, InfoButton } from "./styles";
+import { useRef } from "react";
+import { Body, ButtonBox } from "./styles";
 
 export const CardProject = ({ link, repo, image, Description }) => {
-  const [info, setInfo] = useState(false);
-  function openInfo() {
-    setInfo(true);
+  const RefImg = useRef(null);
+  function LinkClick(e) {
+    if (e.isTrusted) {
+      e.preventDefault();
+    }
   }
-  function closeInfo() {
-    setInfo(false);
+  function InfoClick() {
+    RefImg.current.nextSibling.classList.toggle("open");
   }
-  console.log(Description);
+
   return (
     <Body>
-      <img loading={"lazy"} alt="" src={image} width={600} />
-      <BoxProject target={"blank"} href={link}>
-        <span>Visitar</span>
-      </BoxProject>
-      <BoxRepo target={"blank"} href={repo}>
-        <span>Repo</span>
-      </BoxRepo>
-      <InfoButton onClick={openInfo}>+ Inf</InfoButton>
+      <img ref={RefImg} loading={"lazy"} alt="" src={image} width={600} />
 
-      {info && <Description closeInfo={closeInfo} />}
+      <Description closeInfo={InfoClick} />
+      <ButtonBox>
+        <a onClick={LinkClick} target={"blank"} href={repo}>
+          Repo
+        </a>
+        <a onClick={LinkClick} target={"blank"} href={link}>
+          Visitar
+        </a>
+        <button onClick={InfoClick}>Info</button>
+      </ButtonBox>
     </Body>
   );
 };

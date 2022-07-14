@@ -1,12 +1,13 @@
 import {
   Body,
+  TecContainer,
   Title,
   SectionBody,
   Titlebox,
   Img,
   BoxTechnologies,
   TecTitle,
-  BoxImg
+  BoxImg,
 } from "./styles";
 import html5Icon from "./../../img/Technologies/732212.png";
 import reactIcon from "./../../img/Technologies/1200px-React.svg.png";
@@ -22,72 +23,74 @@ import graphQLIcon from "./../../img/Technologies/GraphQL_Logo.svg.png";
 export const TegnologiesSection = () => {
   return (
     <Body>
-      <Title>
-        <span>Tecnologias</span>
-      </Title>
-      <SectionBody>
-        <BoxTechnologies>
-          <Titlebox>
-            <span>Aprendidas</span>
-          </Titlebox>
-          <BoxImg>
-            <TecTitle>HTML</TecTitle>
-            <Img alt="" src={html5Icon} />
-          </BoxImg>
+      <TecContainer>
+        <Title>
+          <span>Tecnologías</span>
+        </Title>
+        <SectionBody>
+          <BoxTechnologies>
+            <Titlebox>
+              <span>Aprendidas</span>
+            </Titlebox>
+            <BoxImg>
+              <TecTitle>HTML</TecTitle>
+              <Img alt="" src={html5Icon} />
+            </BoxImg>
 
-          <BoxImg>
-            <TecTitle>REACT</TecTitle>
-            <Img alt="" src={reactIcon} />
-          </BoxImg>
+            <BoxImg>
+              <TecTitle>REACT</TecTitle>
+              <Img alt="" src={reactIcon} />
+            </BoxImg>
 
-          <BoxImg>
-            <TecTitle>CSS</TecTitle>
-            <Img alt="" src={cssIcon} />
-          </BoxImg>
+            <BoxImg>
+              <TecTitle>CSS</TecTitle>
+              <Img alt="" src={cssIcon} />
+            </BoxImg>
 
-          <BoxImg>
-            <TecTitle>Javascript</TecTitle>
-            <Img alt="" src={jsIcon} />
-          </BoxImg>
+            <BoxImg>
+              <TecTitle>Javascript</TecTitle>
+              <Img alt="" src={jsIcon} />
+            </BoxImg>
 
-          <BoxImg>
-            <TecTitle>GIT</TecTitle>
-            <Img alt="" src={gitIcon} />
-          </BoxImg>
+            <BoxImg>
+              <TecTitle>GIT</TecTitle>
+              <Img alt="" src={gitIcon} />
+            </BoxImg>
 
-          <BoxImg>
-            <TecTitle>Firebase</TecTitle>
-            <Img alt="" src={firebaseIcon} />
-          </BoxImg>
-        </BoxTechnologies>
-        <BoxTechnologies>
-          <Titlebox>
-            <span>Me Interesa Aprender</span>
-          </Titlebox>
+            <BoxImg>
+              <TecTitle>Firebase</TecTitle>
+              <Img alt="" src={firebaseIcon} />
+            </BoxImg>
+          </BoxTechnologies>
+          <BoxTechnologies>
+            <Titlebox>
+              <span>Me Interesa Aprender</span>
+            </Titlebox>
 
-          <BoxImg>
-            <TecTitle>NEXT.js</TecTitle>
-            <Img alt="" src={nextIcon} />
-          </BoxImg>
+            <BoxImg>
+              <TecTitle>NEXT.js</TecTitle>
+              <Img alt="" src={nextIcon} />
+            </BoxImg>
 
-          <BoxImg>
-            <TecTitle>Typescript</TecTitle>
-            <Img alt="" src={tsIcon} />
-          </BoxImg>
+            <BoxImg>
+              <TecTitle>Typescript</TecTitle>
+              <Img alt="" src={tsIcon} />
+            </BoxImg>
 
-          <BoxImg>
-            <TecTitle>mongo DB</TecTitle>
-            <Img alt="" src={mongodbIcon} />
-          </BoxImg>
+            <BoxImg>
+              <TecTitle>mongo DB</TecTitle>
+              <Img alt="" src={mongodbIcon} />
+            </BoxImg>
 
-          <BoxImg>
-            <TecTitle>GraphQL</TecTitle>
-            <Img alt="" src={graphQLIcon} />
-          </BoxImg>
-          <div className={"relleno"} />
-          <div className={"relleno"} />
-        </BoxTechnologies>
-      </SectionBody>
+            <BoxImg>
+              <TecTitle>GraphQL</TecTitle>
+              <Img alt="" src={graphQLIcon} />
+            </BoxImg>
+            <div className={"relleno"} />
+            <div className={"relleno"} />
+          </BoxTechnologies>
+        </SectionBody>
+      </TecContainer>
     </Body>
   );
 };
