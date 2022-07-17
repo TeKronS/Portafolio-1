@@ -16,72 +16,35 @@ export const HeaderSection = () => {
 
   useEffect(() => {
     let clickPush = false;
+    let isTouch = false;
     let x = 82;
     let xTouch = 82;
     let y;
     let element;
-    let selectElement;
-    let isTouch = false;
+    let width = window.innerWidth;
+    const left_LIMIT = 50;
+    let right_LIMIT = width - 70;
 
-    //this function move triangle
-    function triangleMove() {
-      const width = window.innerWidth;
-
-      // X condition
-      if (x > 50) {
-        let newX;
-        let LineX;
-
-        if (x > width - 75) {
-          newX = width - 100;
-          LineX = width - 70;
-        } else {
-          newX = x - 29;
-          LineX = x;
-        }
-        refHeader.current.style.clipPath = `polygon(
-          0px 85px,
-          3px 90px,
-          5px 93px,
-          10px 97px,
-          15px 99px,
-          20px 100px,
-          ${newX}px 100px,
-          ${newX + 30}px 130px,
-          ${newX + 60}px 100px,
-          calc(100% - 20px) 100px,
-          calc(100% - 15px) 99px,
-          calc(100% - 10px) 97px,
-          calc(100% - 5px) 93px,
-          calc(100% - 3px) 90px,
-          100% 85px,
-          100% 0px,
-          0px 0px
-        )`;
-        reziseLinePower(LineX);
-      } else {
-        reziseLinePower(50);
-
-        refHeader.current.style.clipPath = `polygon(
-          0px 85px,
-          3px 90px,
-          5px 93px,
-          10px 97px,
-          15px 99px,
-          20px 100px,
-          21px 100px,
-          51px 130px,
-          81px 100px,
-          calc(100% - 20px) 100px,
-          calc(100% - 15px) 99px,
-          calc(100% - 10px) 97px,
-          calc(100% - 5px) 93px,
-          calc(100% - 3px) 90px,
-          100% 85px,
-          100% 0px,
-          0px 0px
-        )`;
-      }
+    function setPoligon() {
+      refHeader.current.style.clipPath = `polygon(
+        0px 85px,
+        3px 90px,
+        5px 93px,
+        10px 97px,
+        15px 99px,
+        20px 100px,
+        ${x - 29}px 100px,
+        ${x}px 130px,
+        ${x + 29}px 100px,
+        calc(100% - 20px) 100px,
+        calc(100% - 15px) 99px,
+        calc(100% - 10px) 97px,
+        calc(100% - 5px) 93px,
+        calc(100% - 3px) 90px,
+        100% 85px,
+        100% 0px,
+        0px 0px
+      )`;
     }
 
     //this function determines the shape of the ammunition line
@@ -98,6 +61,7 @@ export const HeaderSection = () => {
         width - 70
       } ${leftHeight} M 190 100 z'%0Astyle='fill:none;stroke:red;stroke-dasharray:5;stroke-linecap:round;stroke-width:3' /%3E%3C/svg%3E")`;
     }
+
     // initial execution
     reziseLinePower(x);
 
@@ -106,7 +70,8 @@ export const HeaderSection = () => {
       if (y && element) {
         if (y > 130) {
           clickPush = true;
-          selectElement = element;
+          const selectElement = element;
+
           refBala.current.style.transition = "350ms ease 0s";
           refBala.current.style.top = `${y - 5}px`;
           selectElement.style.transition = "175ms ease 175ms";
@@ -120,19 +85,7 @@ export const HeaderSection = () => {
             refBala.current.style.transition = "";
             refBala.current.style.top = "120px";
             if (isTouch) {
-              let LineX = x;
-              const width = window.innerWidth;
-
-              if (x > 50) {
-                if (x > width - 75) {
-                  LineX = width - 70;
-                } else {
-                  LineX = x;
-                }
-              } else {
-                LineX = 50;
-              }
-              refBala.current.style.left = `${LineX}px`;
+              refBala.current.style.left = `${x}px`;
             }
             setTimeout(() => {
               if (clickPush) disparar();
@@ -145,21 +98,37 @@ export const HeaderSection = () => {
       }
     }
 
+    function setCoordinate(e) {
+      if (e.clientX) {
+        y = e.clientY;
+        if (e.clientX <= 50) {
+          x = left_LIMIT;
+        } else if (e.clientX > width - 75) {
+          x = right_LIMIT;
+        } else {
+          x = e.clientX;
+        }
+      } else {
+        x = 80;
+        y = 200;
+      }
+    }
+
+    //this function move triangle
+    function triangleMove() {
+      reziseLinePower(x);
+      setPoligon();
+    }
+
     function mouseLeave() {
       clickPush = false;
     }
 
     function touchst(e) {
       isTouch = true;
-      if (e.touches[0]) {
-        x = e.touches[0].clientX;
-        xTouch = e.touches[0].clientX;
-        y = e.touches[0].clientY;
-        element = e.target;
-      } else {
-        x = 80;
-        y = 200;
-      }
+      setCoordinate(e.touches[0]);
+      element = e.target;
+      xTouch = e.touches[0].clientX;
       triangleMove();
       disparar();
     }
@@ -171,26 +140,19 @@ export const HeaderSection = () => {
     }
 
     function touchmove(e) {
-      if (e.touches[0]) {
-        x = e.touches[0].clientX;
-        y = e.touches[0].clientY;
-        element = e.target;
-      } else {
-        x = 80;
-        y = 200;
-      }
+      setCoordinate(e.touches[0]);
       triangleMove();
     }
 
     function clickmove(e) {
-      if (e.clientX && e.clientY) {
-        x = e.clientX;
-        y = e.clientY;
-        element = e.target;
-      } else {
-        x = 80;
-        y = 120;
-      }
+      setCoordinate(e);
+      element = e.target;
+
+      triangleMove();
+    }
+
+    function reziseWindow() {
+      width = window.innerWidth;
       triangleMove();
     }
 
@@ -200,7 +162,7 @@ export const HeaderSection = () => {
     document.addEventListener("touchmove", touchmove);
     document.addEventListener("touchstart", touchst);
     document.addEventListener("touchend", mouseLeave);
-    window.addEventListener("resize", triangleMove);
+    window.addEventListener("resize", reziseWindow);
 
     return () => {
       document.removeEventListener("mousemove", clickmove);
@@ -209,7 +171,7 @@ export const HeaderSection = () => {
       document.removeEventListener("touchmove", touchmove);
       document.removeEventListener("touchstart", touchst);
       document.removeEventListener("touchend", mouseLeave);
-      window.removeEventListener("resize", triangleMove);
+      window.removeEventListener("resize", reziseWindow);
     };
   }, []);
   return (
