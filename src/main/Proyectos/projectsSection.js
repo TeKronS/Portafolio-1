@@ -3,6 +3,7 @@ import img1 from "./../../img/Projects/Canvas Dibujo 1.jpg";
 import img2 from "./../../img/Projects/IB Admin 1.png";
 import img3 from "./../../img/Projects/Tienda Online 1.jpg";
 import img4 from "./../../img/Projects/Inversiones Boara Wep App.jpg";
+import img5 from "./../../img/Projects/NextIB.png";
 import { CardProject } from "./CardProject/CardProject";
 
 export const ProjectsSection = () => {
@@ -37,6 +38,13 @@ export const ProjectsSection = () => {
           link={"https://inversiones-boara.web.app/"}
           repo={"https://github.com/TeKronS/Inversiones-Boara"}
           Description={Description4}
+        />
+        
+        <CardProject
+          image={img5}
+          link={"https://next-inversiones-boara.vercel.app/"}
+          repo={"https://github.com/TeKronS/Next-Inversiones-Boara"}
+          Description={Description5}
         />
       </SectionCard>
     </Body>
@@ -193,6 +201,46 @@ const Description4 = ({ closeInfo }) => {
             administrador de la pagina (según la información de la base de
             datos) puede agregar o eliminar botones en una segunda pagina de
             administrador que hice.
+          </li>
+          <li>
+            Toda la información de los productos es manipulada por el
+            administrador de la pagina con una segunda pagina de formulario.
+          </li>
+          <li>Animación del Lógo de la Empresa.</li>
+          <li>Integración de mensajes para WhatsApp.</li>
+          <li>Integración con página de Facebook.</li>
+        </ul>
+      </div>
+    </ContainDescripotion>
+  );
+};
+
+const Description5 = ({ closeInfo }) => {
+  return (
+    <ContainDescripotion>
+      <div>
+        <button onClick={closeInfo}>X</button>
+        <h3>Next Inversiones Boara</h3>
+        <p>
+          Proyecto Inversiones Boara, es una Web App para una empresa que vende
+          regalos para días especiales. No contiene pasarelas de pago solo
+          información de los productos e integración para solicitar productos
+          por WhatsApp y Facebook.
+        </p>
+
+        <h4>Este proyecto contiene:</h4>
+        <ul>
+          <li>Diseño Responsivo.</li>
+          <li>
+           Página remasterizada, creada con la tegnologia de Next.js. 
+          </li>
+          <li>Tarjetas que se enfocan en mostrar la imagen del producto y con un reverso que describe el producto con opción a consultar el precio del producto.</li>
+          <li>Al consultar el precio le envia un link al vendedor donde el puede ver el producto que el cliente muestra interes</li>
+          <li>
+            Barra de navegación responsiva que se oculta en la flecha del centro, cumple la función de filtrar las tarjetas por categorias.
+          </li>
+          <li>
+            Sección de reñas que muestra a los usuarios las ventas concretadas y la fecha de las mismas.
           </li>
           <li>
             Toda la información de los productos es manipulada por el

@@ -71,11 +71,9 @@ export const Titlebox = styled.h4`
   height: 75px;
   border-bottom: 2px solid #007cf4;
   box-shadow: 0px 3px 3px white;
-
+  background: #1d1d1d;
   span {
-    background: linear-gradient(#00dfd8, #007cf4);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #FFFFFF;
     text-align: center;
   }
 `;
@@ -95,4 +93,5 @@ export const Img = styled.img`
 export const TecTitle = styled.h5`
   text-align: center;
   margin: 5px;
+  
 `;

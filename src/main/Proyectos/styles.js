@@ -14,7 +14,7 @@ export const SectionCard = styled.section`
   grid-gap: 30px;
   box-sizing: content-box;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-auto-flow: column;
   padding: 0 30px;
   @media screen and (max-width: 850px) {

@@ -13,14 +13,16 @@ export const Body = styled.article`
     width: 100%;
     height: 100%;
   }
+
   :hover {
     border-color: white;
     a {
       height: calc(50% - 2px);
       :hover {
         span {
-          background: white;
-          color: black;
+          background:rgb(182, 136, 228);
+          color:rgb(55, 5, 105);
+          box-shadow: 0px 0px 10px white;
         }
       }
     }
@@ -55,9 +57,11 @@ export const BoxProject = styled.a`
     border-radius: 999px;
     margin-bottom: -36px;
     line-height: 40px;
-    color: black;
+    color: white;
     cursor: pointer;
     font-weight: bold;
+    transition: 300ms ease-in-out 0s;
+
   }
 `;
 
@@ -89,23 +93,26 @@ export const BoxRepo = styled.a`
     color: white;
     cursor: pointer;
     font-weight: bold;
+    transition: 300ms ease-in-out 0s;
+
   }
 `;
 
 export const InfoButton = styled.button`
   display: none;
   position: absolute;
+  transition: 200ms ease-in-out 0s;
   right: 3px;
   bottom: 3px;
   z-index: 4;
   padding: 5px 8px;
   border-radius: 5px;
   font-size: 16px;
-  border: 2px solid #ff0080;
+  border: 2px solid #7928ca;
   font-weight: bold;
-
+  background:rgb(185, 157, 212);
   cursor: pointer;
   :hover {
-    background: #eedbd6;
+  background:rgb(159, 109, 210);
   }
 `;

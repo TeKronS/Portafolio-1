@@ -67,8 +67,18 @@ export const ImageBox = styled.div`
   background-attachment: fixed;
 
   img {
+    height:280px;
     margin: auto;
     border-radius: 5px;
+    object-fit: cover;
+  }
+      @media screen and (max-width: 550px) {
+   img {
+    height: 100%;
+    margin: auto;
+    border-radius: 5px;
+    object-fit: cover;
+  }
   }
 `;
 
@@ -104,7 +114,7 @@ export const Description = styled.p`
   font-size: 15px;
   margin: 0 5px 5px;
   padding: 5px;
-  background: white;
+  background:rgb(226, 226, 221) ;
   border-radius: 5px;
 `;
 
@@ -159,7 +169,7 @@ export const ContactLinkBox = styled.div`
     margin: 5px 0;
   }
 
-  @media screen and (max-width: 535px) {
+  @media screen and (max-width: 550px) {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     justify-items: center;

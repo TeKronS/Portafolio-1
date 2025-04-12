@@ -18,6 +18,7 @@ import tsIcon from "./../../img/Technologies/Typescript_logo_2020.svg.png";
 import mongodbIcon from "./../../img/Technologies/descarga.png";
 import firebaseIcon from "./../../img/Technologies/touchicon-180.png";
 import graphQLIcon from "./../../img/Technologies/GraphQL_Logo.svg.png";
+import figmaIcon from "./../../img/Technologies/figma.avif";
 
 export const TegnologiesSection = () => {
   return (
@@ -32,32 +33,47 @@ export const TegnologiesSection = () => {
           </Titlebox>
           <BoxImg>
             <TecTitle>HTML</TecTitle>
-            <Img alt="" src={html5Icon} />
+            <Img alt="HTML" src={html5Icon} />
           </BoxImg>
 
           <BoxImg>
             <TecTitle>REACT</TecTitle>
-            <Img alt="" src={reactIcon} />
+            <Img alt="REACT" src={reactIcon} />
+          </BoxImg>
+
+          <BoxImg>
+            <TecTitle>NEXT.js</TecTitle>
+            <Img alt="NEXT.js" src={nextIcon} />
           </BoxImg>
 
           <BoxImg>
             <TecTitle>CSS</TecTitle>
-            <Img alt="" src={cssIcon} />
+            <Img alt="CSS" src={cssIcon} />
           </BoxImg>
 
           <BoxImg>
             <TecTitle>Javascript</TecTitle>
-            <Img alt="" src={jsIcon} />
+            <Img alt="Javascript" src={jsIcon} />
+          </BoxImg>
+
+          <BoxImg>
+            <TecTitle>Typescript</TecTitle>
+            <Img alt="Typescript" src={tsIcon} />
           </BoxImg>
 
           <BoxImg>
             <TecTitle>GIT</TecTitle>
-            <Img alt="" src={gitIcon} />
+            <Img alt="GIT" src={gitIcon} />
           </BoxImg>
 
           <BoxImg>
             <TecTitle>Firebase</TecTitle>
-            <Img alt="" src={firebaseIcon} />
+            <Img alt="Firebase" src={firebaseIcon} />
+          </BoxImg>
+
+          <BoxImg>
+            <TecTitle>Figma</TecTitle>
+            <Img alt="Figma" src={figmaIcon} />
           </BoxImg>
         </BoxTechnologies>
         <BoxTechnologies>
@@ -66,23 +82,13 @@ export const TegnologiesSection = () => {
           </Titlebox>
 
           <BoxImg>
-            <TecTitle>NEXT.js</TecTitle>
-            <Img alt="" src={nextIcon} />
-          </BoxImg>
-
-          <BoxImg>
-            <TecTitle>Typescript</TecTitle>
-            <Img alt="" src={tsIcon} />
-          </BoxImg>
-
-          <BoxImg>
-            <TecTitle>mongo DB</TecTitle>
-            <Img alt="" src={mongodbIcon} />
+            <TecTitle>Mongo DB</TecTitle>
+            <Img alt="Mongo DB" src={mongodbIcon} />
           </BoxImg>
 
           <BoxImg>
             <TecTitle>GraphQL</TecTitle>
-            <Img alt="" src={graphQLIcon} />
+            <Img alt="GraphQL" src={graphQLIcon} />
           </BoxImg>
           <div className={"relleno"} />
           <div className={"relleno"} />
