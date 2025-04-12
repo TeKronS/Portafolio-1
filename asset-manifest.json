@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/Portafolio-1/static/css/main.f1438e80.css",
+    "main.js": "/Portafolio-1/static/js/main.495badee.js",
+    "static/js/787.cc4e593a.chunk.js": "/Portafolio-1/static/js/787.cc4e593a.chunk.js",
+    "static/media/NextIB.png": "/Portafolio-1/static/media/NextIB.30ae4ab5e782b2e3a98d.png",
+    "static/media/Inversiones Boara Wep App.jpg": "/Portafolio-1/static/media/Inversiones Boara Wep App.3f9d9e34314a1e523485.jpg",
+    "static/media/Tienda Online 1.jpg": "/Portafolio-1/static/media/Tienda Online 1.be69e0f939e66d63db76.jpg",
+    "static/media/1200px-React.svg.png": "/Portafolio-1/static/media/1200px-React.svg.70cd8f7181d7f1aa02fb.png",
+    "static/media/Roboto.woff": "/Portafolio-1/static/media/Roboto.1c9c3df25d1a9861f401.woff",
+    "static/media/Roboto.woff2": "/Portafolio-1/static/media/Roboto.7a6a74946c133ee71f79.woff2",
+    "service-worker.js": "/Portafolio-1/service-worker.js",
+    "static/media/Canvas Dibujo 1.jpg": "/Portafolio-1/static/media/Canvas Dibujo 1.49fdad613f388616fca7.jpg",
+    "static/media/GraphQL_Logo.svg.png": "/Portafolio-1/static/media/GraphQL_Logo.svg.551f8f92d9b007de234c.png",
+    "static/media/CSS3_logo_and_wordmark.svg.png": "/Portafolio-1/static/media/CSS3_logo_and_wordmark.svg.3ba681525a6d7064323b.png",
+    "static/media/javascript-icon-png-23.jpg": "/Portafolio-1/static/media/javascript-icon-png-23.5648ae0aeb0182cbd857.jpg",
+    "static/media/Typescript_logo_2020.svg.png": "/Portafolio-1/static/media/Typescript_logo_2020.svg.4b737ea68049e6c3d569.png",
+    "static/media/fb-Logo.jpeg": "/Portafolio-1/static/media/fb-Logo.4d7c76a3ad8800c8c77b.jpeg",
+    "static/media/Y-O.jpg": "/Portafolio-1/static/media/Y-O.bb6b0d62c591df1971ce.jpg",
+    "static/media/1200px-Nextjs-logo.svg.png": "/Portafolio-1/static/media/1200px-Nextjs-logo.svg.fbb8dd16ff22b38b64f6.png",
+    "static/media/linkedin-icon.png": "/Portafolio-1/static/media/linkedin-icon.9a3259a78d9d25495628.png",
+    "static/media/ROBOTOP.woff": "/Portafolio-1/static/media/ROBOTOP.cd806216aa5dfbe20ffd.woff",
+    "static/media/ROBOTOP.woff2": "/Portafolio-1/static/media/ROBOTOP.9814f29702a359d2814c.woff2",
+    "static/media/web-github-icon.png": "/Portafolio-1/static/media/web-github-icon.115f83c80c0d818bb6d4.png",
+    "static/media/Git-logo_pr848f.png": "/Portafolio-1/static/media/Git-logo_pr848f.ec7c1b52b0b7eddf0bf4.png",
+    "static/media/732212.png": "/Portafolio-1/static/media/732212.35c514b2c64dd23d08ae.png",
+    "static/media/figma.avif": "/Portafolio-1/static/media/figma.f751b30a541ef7c3b442.avif",
+    "index.html": "/Portafolio-1/index.html",
+    "main.f1438e80.css.map": "/Portafolio-1/static/css/main.f1438e80.css.map",
+    "main.495badee.js.map": "/Portafolio-1/static/js/main.495badee.js.map",
+    "787.cc4e593a.chunk.js.map": "/Portafolio-1/static/js/787.cc4e593a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f1438e80.css",
+    "static/js/main.495badee.js"
+  ]
+}
